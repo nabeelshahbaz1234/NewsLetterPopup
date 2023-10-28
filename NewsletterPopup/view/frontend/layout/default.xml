@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="after.body.start">
+			<block class="Magento\Newsletter\Block\Subscribe" name="porto_newsletter_popup" template="RltSquare_NewsletterPopup::subscribe_popup.phtml" before="-"/>
+		</referenceContainer>
+	</body>
+    <body>
+        <referenceBlock name="form.subscribe" template="RltSquare_NewsletterPopup::subscribe.phtml"/>
+    </body>
+
+    <referenceBlock name="form.subscribe">
+        <block class="RltSquare\NewsletterPopup\Block\CategoryList" name="your.custom.categorylist" template="RltSquare_NewsletterPopup::category_list.phtml" after="-" />
+    </referenceBlock>
+</page>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="newsletter_subscriber">
+        <column xsi:type="varchar" name="gender" nullable="true" length="255" comment="gender"/>
+        <column xsi:type="varchar" name="selected_categories" nullable="true" length="255" comment="Selected Categories"/>
+    </table>
+</schema>

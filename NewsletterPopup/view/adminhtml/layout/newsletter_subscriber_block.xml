@@ -1,0 +1,36 @@
+<!-- app/code/YourVendor/YourModule/view/adminhtml/layout/yourmodule_newsletter_subscriber_index.xml -->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.newslettrer.subscriber.grid.columnSet">
+            <!-- Gender Column (Existing) -->
+            <block class="Magento\Backend\Block\Widget\Grid\Column" name="subscriber.grid.column.gender" as="gender">
+                <arguments>
+                    <argument name="header" xsi:type="string" translate="true">Gender</argument>
+                    <argument name="index" xsi:type="string">gender</argument>
+                    <argument name="type" xsi:type="string">options</argument>
+                    <argument name="options" xsi:type="array">
+                        <item name="gender_male" xsi:type="array">
+                            <item name="value" xsi:type="string">male</item>
+                            <item name="label" xsi:type="string" translate="true">Male</item>
+                        </item>
+                        <item name="gender_female" xsi:type="array">
+                            <item name="value" xsi:type="string">female</item>
+                            <item name="label" xsi:type="string" translate="true">Female</item>
+                        </item>
+                    </argument>
+                    <argument name="header_css_class" xsi:type="string">col-gender</argument>
+                    <argument name="column_css_class" xsi:type="string">col-gender</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Backend\Block\Widget\Grid\Column" name="subscriber.grid.column.selected_categories" as="selected_categories">
+                <arguments>
+                    <argument name="header" xsi:type="string" translate="true">Selected Categories</argument>
+                    <argument name="index" xsi:type="string">selected_categories</argument>
+                    <argument name="renderer" xsi:type="string">RltSquare\NewsletterPopup\Block\Adminhtml\Subscriber\Grid\Column\SelectedCategories</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

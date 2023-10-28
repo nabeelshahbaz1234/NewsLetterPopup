@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <newsletter_popup>
+            <newsletter>
+                <enable>0</enable>
+                <delay>5000</delay>
+                <content><![CDATA[<h3 style="font-size: 18px;line-height: 1.2" class="vc_custom_heading mb-2 align-left text-uppercase">Subscribe To Newsletter</h3>
+                <p style="font-size: 14px;line-height: 1.8571;letter-spacing:-.02em" class="vc_custom_heading mb-4 align-left">Subscribe to the Sana Safinaz mailing list to receive updates on new arrivals, special offers and our promotions.</p>]]></content>
+            </newsletter>
+        </newsletter_popup>
+    </default>
+</config>
